@@ -61,13 +61,13 @@ https://www.tooplate.com/view/2095-level
                                     <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
                                   </li>
                                   <li class="nav-item">
-                                    <a class="nav-link" href="#tm-section-4">Dashboard</a>
+                                    <a class="nav-link" href="${pageContext.request.contextPath}/dashboard.jsp">Room Type</a>
                                   </li>
                                   <li class="nav-item">
                                     <a class="nav-link" href="#tm-section-5">My Bookings</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a class="nav-link" href="#tm-section-6">Room Status</a>
+                                    <a class="nav-link" href="#tm-section-6">Contact Us</a>
                                   </li>
                                 </ul>
                             </div>                            
