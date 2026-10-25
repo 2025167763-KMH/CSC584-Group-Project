@@ -40,6 +40,23 @@ https://www.tooplate.com/view/2095-level
 </head>
 
     <body>
+        <style>
+    /* Stop menu items from stretching and remove the boxy borders */
+    #mainNav .navbar-nav .nav-item {
+        flex-grow: 0 !important;
+        border: none !important;
+    }
+    
+    /* Standardize the clickable padding */
+    #mainNav .navbar-nav .nav-link {
+        padding: 15px 25px !important;
+    }
+    
+    /* Ensure the menu block sits on the far right */
+    .navbar-collapse {
+        justify-content: flex-end !important;
+    }
+</style>
         <div class="tm-main-content" id="top">
             <div class="tm-top-bar-bg"></div>
             <div class="tm-top-bar" id="tm-top-bar">
@@ -56,6 +73,7 @@ https://www.tooplate.com/view/2095-level
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+                                <% String currentURL = request.getRequestURI(); %>
                                 <ul class="navbar-nav ml-auto">
                                   <li class="nav-item">
                                     <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
@@ -69,6 +87,31 @@ https://www.tooplate.com/view/2095-level
                                   <li class="nav-item">
                                     <a class="nav-link" href="#tm-section-6">Room Status</a>
                                   </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="${pageContext.request.contextPath}/index.jsp" 
+                                           <%= currentURL.endsWith("index.jsp") || currentURL.endsWith("/") ? "style='color: #ff5a5f !important; font-weight: bold;'" : "" %>>Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="${pageContext.request.contextPath}/dashboard.jsp"
+                                           <%= currentURL.endsWith("dashboard.jsp") ? "style='color: #ff5a5f !important; font-weight: bold;'" : "" %>>Dashboard</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="${pageContext.request.contextPath}/mybooking.jsp"
+                                           <%= currentURL.endsWith("mybooking.jsp") ? "style='color: #ff5a5f !important; font-weight: bold;'" : "" %>>My Bookings</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="${pageContext.request.contextPath}/roomstatus.jsp"
+                                           <%= currentURL.endsWith("roomstatus.jsp") ? "style='color: #ff5a5f !important; font-weight: bold;'" : "" %>>Room Status</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="${pageContext.request.contextPath}/profile.jsp"
+                                           <%= currentURL.endsWith("profile.jsp") ? "style='color: #ff5a5f !important; font-weight: bold;'" : "" %>>My Profile</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="${pageContext.request.contextPath}/logout.jsp" style="background-color: #ff5a5f; color: white !important; border-radius: 25px; padding: 10px 25px !important; margin-left: 15px; font-weight: bold;">
+                                            Logout
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>                            
                         </nav>            
