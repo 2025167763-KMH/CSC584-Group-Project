@@ -1,8 +1,3 @@
-<%-- 
-    Document   : header
-    Created on : Oct 21, 2026, 9:42:53 PM
-    Author     : kaymakkau
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -75,18 +70,6 @@ https://www.tooplate.com/view/2095-level
                             <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
                                 <% String currentURL = request.getRequestURI(); %>
                                 <ul class="navbar-nav ml-auto">
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#tm-section-4">Dashboard</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#tm-section-5">My Bookings</a>
-                                  </li>
-                                  <li class="nav-item">
-                                    <a class="nav-link" href="#tm-section-6">Room Status</a>
-                                  </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="${pageContext.request.contextPath}/index.jsp" 
                                            <%= currentURL.endsWith("index.jsp") || currentURL.endsWith("/") ? "style='color: #ff5a5f !important; font-weight: bold;'" : "" %>>Home</a>
