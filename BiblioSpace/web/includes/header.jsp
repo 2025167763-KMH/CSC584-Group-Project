@@ -91,8 +91,9 @@ https://www.tooplate.com/view/2095-level
                                            <%= currentURL.endsWith("profile.jsp") ? "style='color: #ff5a5f !important; font-weight: bold;'" : "" %>>My Profile</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="${pageContext.request.contextPath}/logout.jsp" style="background-color: #ff5a5f; color: white !important; border-radius: 25px; padding: 10px 25px !important; margin-left: 15px; font-weight: bold;">
-                                            Logout
+                                        <a class="nav-link" href="${pageContext.request.contextPath}/login.jsp"
+                                        style="background-color: #ff5a5f; color: white !important; border-radius: 25px; padding: 10px 25px !important; margin-left: 15px; font-weight: bold;">
+                                            Login
                                         </a>
                                     </li>
                                 </ul>
