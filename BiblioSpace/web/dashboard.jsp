@@ -1,384 +1,259 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
-<!DOCTYPE html>
-<html lang="en">
+<jsp:include page="includes/header.jsp" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    /* Dashboard styles only */
+    .dashboard-page {
+        background-color: #f5f7fa;
+        min-height: 65vh;
+        padding: 45px 20px 60px;
+    }
 
-    <title>Biblio-Space Dashboard</title>
+    .dashboard-page .dashboard-container {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet"
-          href="${pageContext.request.contextPath}/css/bootstrap.min.css">
+    /* Welcome banner */
+    .dashboard-page .dashboard-welcome {
+        background-color: #ff5a5f;
+        color: #ffffff;
+        padding: 28px 30px;
+        border-radius: 12px;
+        margin-bottom: 30px;
+        box-shadow: 0 5px 15px rgba(255, 90, 95, 0.15);
+    }
 
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet"
-          href="${pageContext.request.contextPath}/font-awesome-4.7.0/css/font-awesome.min.css">
+    .dashboard-page .dashboard-welcome h1 {
+        color: #ffffff;
+        font-size: 28px;
+        font-weight: 700;
+        margin: 0 0 8px;
+    }
 
-    <style>
+    .dashboard-page .dashboard-welcome p {
+        color: #ffffff;
+        margin: 0;
+        font-size: 15px;
+        line-height: 1.6;
+    }
 
-        /* Basic page settings */
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
-            color: #333333;
+    /* Booking card */
+    .dashboard-page .dashboard-booking-card {
+        background-color: #ffffff;
+        border-radius: 12px;
+        padding: 30px;
+        margin-bottom: 35px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    }
+
+    .dashboard-page .dashboard-booking-card h2 {
+        color: #203746;
+        font-size: 23px;
+        font-weight: 600;
+        margin: 0 0 22px;
+    }
+
+    .dashboard-page .dashboard-booking-details {
+        background-color: #fafafa;
+        border-left: 4px solid #ff5a5f;
+        border-radius: 6px;
+        padding: 20px;
+    }
+
+    .dashboard-page .dashboard-status {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background-color: #e8f6ed;
+        color: #218c4f;
+        border-radius: 20px;
+        padding: 5px 12px;
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .dashboard-page .dashboard-status i {
+        font-size: 7px;
+    }
+
+    .dashboard-page .dashboard-booking-details h3 {
+        color: #203746;
+        font-size: 21px;
+        font-weight: 600;
+        margin: 0 0 15px;
+    }
+
+    .dashboard-page .dashboard-booking-details p {
+        color: #666666;
+        font-size: 15px;
+        line-height: 1.6;
+        margin: 0 0 10px;
+    }
+
+    .dashboard-page .dashboard-booking-details p:last-child {
+        margin-bottom: 0;
+    }
+
+    .dashboard-page .dashboard-booking-details p i {
+        color: #ff5a5f;
+        width: 22px;
+        text-align: center;
+        margin-right: 6px;
+    }
+
+    /* Quick actions */
+    .dashboard-page .dashboard-quick-heading {
+        color: #203746;
+        font-size: 23px;
+        font-weight: 600;
+        margin: 0 0 20px;
+    }
+
+    .dashboard-page .dashboard-quick-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .dashboard-page .dashboard-action {
+        flex: 1 1 220px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        color: #203746;
+        text-decoration: none;
+        border: 1px solid #eeeeee;
+        border-radius: 12px;
+        padding: 30px 20px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+        transition: background-color 0.2s ease,
+                    color 0.2s ease,
+                    transform 0.2s ease;
+    }
+
+    .dashboard-page .dashboard-action i {
+        color: #ff5a5f;
+        font-size: 32px;
+        margin-bottom: 14px;
+        transition: color 0.2s ease;
+    }
+
+    .dashboard-page .dashboard-action span {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .dashboard-page .dashboard-action:hover,
+    .dashboard-page .dashboard-action:focus {
+        background-color: #ff5a5f;
+        color: #ffffff;
+        text-decoration: none;
+        transform: translateY(-4px);
+    }
+
+    .dashboard-page .dashboard-action:hover i,
+    .dashboard-page .dashboard-action:focus i {
+        color: #ffffff;
+    }
+
+    @media (max-width: 600px) {
+        .dashboard-page {
+            padding: 25px 15px 40px;
         }
 
-        /* Top header */
-        .header {
-            background-color: white;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 15px;
-            border-bottom: 1px solid #dddddd;
+        .dashboard-page .dashboard-welcome,
+        .dashboard-page .dashboard-booking-card {
+            padding: 22px;
         }
 
-        /* Website logo and name */
-        .logo {
-            display: flex;
-            align-items: center;
-            font-size: 18px;
-            font-weight: bold;
-            color: #333333;
-            text-decoration: none;
+        .dashboard-page .dashboard-welcome h1 {
+            font-size: 23px;
         }
 
-        .logo img {
-            width: 30px;
-            height: 30px;
-            margin-right: 8px;
+        .dashboard-page .dashboard-action {
+            flex-basis: 100%;
         }
+    }
+</style>
 
-        /* Menu button */
-        .menu-button {
-            background-color: white;
-            border: 1px solid #cccccc;
-            border-radius: 4px;
-            padding: 5px 10px;
-            font-size: 18px;
-            cursor: pointer;
-        }
+<main class="dashboard-page">
+    <div class="dashboard-container">
 
-        /* Welcome banner */
-        .welcome {
-            background-color: #1b2b3a;
-            color: white;
-            padding: 18px 15px;
-            font-size: 18px;
-        }
+        <!-- Welcome banner -->
+        <section class="dashboard-welcome">
+            <h1>Welcome, [Student Name]!</h1>
+            <p>Manage your discussion room bookings in one place.</p>
+        </section>
 
-        /* Main dashboard content */
-        .main-content {
-            max-width: 700px;
-            margin: 0 auto;
-            padding: 20px 15px;
-            min-height: 250px;
-        }
+        <!-- Next booking -->
+        <section class="dashboard-booking-card"
+                 aria-labelledby="next-booking-heading">
 
-        /* Next booking card */
-        .booking-card {
-            background-color: white;
-            border: 1px solid #ff5a5f;
-            border-radius: 8px;
-            padding: 12px;
-            max-width: 400px;
-            margin: 0 auto 25px auto;
-        }
+            <h2 id="next-booking-heading">Your Next Booking</h2>
 
-        /* Booking heading */
-        .booking-card h3 {
-            font-size: 16px;
-            margin-top: 0;
-            margin-bottom: 10px;
-        }
+            <div class="dashboard-booking-details">
 
-        /* Booking details */
-        .booking-details {
-            background-color: #f0f8f2;
-            border: 1px solid #dddddd;
-            border-radius: 5px;
-            padding: 12px;
-        }
-
-        .booking-details h4 {
-            font-size: 13px;
-            font-weight: bold;
-            margin-top: 0;
-            margin-bottom: 8px;
-        }
-
-        .booking-details p {
-            font-size: 12px;
-            margin: 5px 0;
-        }
-
-        /* Booking status */
-        .status {
-            float: right;
-            background-color: #d4edda;
-            color: #287a3d;
-            padding: 3px 8px;
-            border-radius: 12px;
-            font-size: 10px;
-        }
-
-        /* Quick Actions heading */
-        .quick-heading {
-            font-size: 16px;
-            margin-bottom: 12px;
-        }
-
-        /* Arrange the three buttons */
-        .quick-actions {
-            display: flex;
-            gap: 10px;
-        }
-
-        /* Quick Action buttons */
-        .action-button {
-            flex: 1;
-            background-color: white;
-            border: 1px solid #dddddd;
-            border-radius: 5px;
-            padding: 15px 5px;
-            text-align: center;
-            text-decoration: none;
-            color: #333333;
-        }
-
-        .action-button i {
-            display: block;
-            font-size: 20px;
-            color: #ff5a5f;
-            margin-bottom: 8px;
-        }
-
-        .action-button span {
-            font-size: 11px;
-        }
-
-        /* Button hover effect */
-        .action-button:hover {
-            background-color: #fff0f0;
-            text-decoration: none;
-            color: #333333;
-        }
-
-        /* Footer */
-        .footer {
-            background-color: #1b2b3a;
-            color: white;
-            text-align: center;
-            padding: 15px 10px;
-            font-size: 10px;
-        }
-
-        .footer span {
-            color: #ff5a5f;
-        }
-
-        /* Small screen settings */
-        @media screen and (max-width: 480px) {
-
-            .header {
-                height: 55px;
-            }
-
-            .welcome {
-                font-size: 16px;
-            }
-
-            .main-content {
-                padding: 15px 12px;
-            }
-
-            .quick-actions {
-                gap: 5px;
-            }
-
-            .action-button {
-                padding: 12px 3px;
-            }
-
-        }
-
-    </style>
-
-</head>
-
-<body>
-
-    <!-- Header -->
-    <div class="header">
-
-        <a href="${pageContext.request.contextPath}/index.jsp"
-           class="logo">
-
-            <img src="${pageContext.request.contextPath}/img/icons8-meeting-room-50.png"
-                 alt="Biblio-Space Logo">
-
-            Biblio-Space
-
-        </a>
-
-        <!-- Menu button -->
-        <button class="menu-button"
-                onclick="toggleMenu()"
-                type="button">
-
-            <i class="fa fa-bars"></i>
-
-        </button>
-
-    </div>
-
-
-    <!-- Navigation Menu -->
-    <div id="menu"
-         style="display: none; background-color: white; padding: 15px; text-align: right;">
-
-        <a href="${pageContext.request.contextPath}/index.jsp">Home</a>
-        <br><br>
-
-        <a href="${pageContext.request.contextPath}/dashboard.jsp">Dashboard</a>
-        <br><br>
-
-        <a href="${pageContext.request.contextPath}/booking.jsp">New Booking</a>
-        <br><br>
-
-        <a href="${pageContext.request.contextPath}/mybooking.jsp">History</a>
-        <br><br>
-
-        <a href="${pageContext.request.contextPath}/profile.jsp">My Profile</a>
-        <br><br>
-
-        <a href="${pageContext.request.contextPath}/logout.jsp">Logout</a>
-
-    </div>
-
-
-    <!-- Welcome Banner -->
-    <div class="welcome">
-
-        Welcome, [Student Name]!
-
-    </div>
-
-
-    <!-- Main Content -->
-    <div class="main-content">
-
-
-        <!-- Next Booking Section -->
-        <div class="booking-card">
-
-            <h3>Your Next Booking</h3>
-
-            <div class="booking-details">
-
-                <span class="status">
-                    <i class="fa fa-circle" style="font-size: 7px;"></i>
+                <!-- Sample status; replace with actual booking data later -->
+                <span class="dashboard-status">
+                    <i class="fa fa-circle" aria-hidden="true"></i>
                     Live
                 </span>
 
-                <h4>Room: Study Space A</h4>
+                <h3>Room: Study Space A</h3>
 
                 <p>
-                    <i class="fa fa-calendar" style="color: #ff5a5f;"></i>
-                    &nbsp; October 26, 2026
+                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                    October 26, 2026
                 </p>
 
                 <p>
-                    <i class="fa fa-clock-o" style="color: #ff5a5f;"></i>
-                    &nbsp; 10:00 AM - 12:00 PM
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    10:00 AM - 12:00 PM
                 </p>
 
             </div>
+        </section>
 
-        </div>
+        <!-- Quick actions -->
+        <section aria-labelledby="quick-actions-heading">
 
+            <h2 id="quick-actions-heading"
+                class="dashboard-quick-heading">
+                Quick Actions
+            </h2>
 
-        <!-- Quick Actions Section -->
-        <h3 class="quick-heading">Quick Actions</h3>
+            <div class="dashboard-quick-actions">
 
-        <div class="quick-actions">
+                <a href="${pageContext.request.contextPath}/mybooking.jsp"
+                   class="dashboard-action">
+                    <i class="fa fa-calendar-plus-o"
+                       aria-hidden="true"></i>
+                    <span>New Booking</span>
+                </a>
 
+                <a href="${pageContext.request.contextPath}/mybooking.jsp"
+                   class="dashboard-action">
+                    <i class="fa fa-history"
+                       aria-hidden="true"></i>
+                    <span>History</span>
+                </a>
 
-            <!-- New Booking Button -->
-            <a href="${pageContext.request.contextPath}/booking.jsp"
-               class="action-button">
+                <a href="${pageContext.request.contextPath}/profile.jsp"
+                   class="dashboard-action">
+                    <i class="fa fa-user"
+                       aria-hidden="true"></i>
+                    <span>My Profile</span>
+                </a>
 
-                <i class="fa fa-calendar-plus-o"></i>
-
-                <span>New Booking</span>
-
-            </a>
-
-
-            <!-- History Button -->
-            <a href="${pageContext.request.contextPath}/mybooking.jsp"
-               class="action-button">
-
-                <i class="fa fa-history"></i>
-
-                <span>History</span>
-
-            </a>
-
-
-            <!-- My Profile Button -->
-            <a href="${pageContext.request.contextPath}/profile.jsp"
-               class="action-button">
-
-                <i class="fa fa-user"></i>
-
-                <span>My Profile</span>
-
-            </a>
-
-
-        </div>
+            </div>
+        </section>
 
     </div>
+</main>
 
-
-    <!-- Footer -->
-    <div class="footer">
-
-        Copyright &copy; 2026 The Library.
-
-        <span>Biblio-Space Discussion Room Booking</span>
-
-    </div>
-
-
-    <!-- Simple JavaScript for Menu Button -->
-    <script>
-
-        function toggleMenu() {
-
-            var menu = document.getElementById("menu");
-
-            if (menu.style.display === "none") {
-
-                menu.style.display = "block";
-
-            } else {
-
-                menu.style.display = "none";
-
-            }
-
-        }
-
-    </script>
-
-</body>
-
-</html>
+<jsp:include page="includes/footer.jsp" />

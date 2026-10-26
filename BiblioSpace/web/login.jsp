@@ -1,279 +1,60 @@
-<jsp:include page="includes/header.jsp" />
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Login Page - Biblio-Space</title>
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet"
-          href="${pageContext.request.contextPath}/css/bootstrap.min.css">
-
-    <style>
-
-        /* Basic page settings */
-        body 
-            {
-                margin: 0;
-                font-family: Arial, sans-serif;
-                background-color: #eeeeee;
-            }
-
-        /* Top bar */
-        .top-bar 
-            {
-                height: 35px;
-                background-color: #222222;
-                color: white;
-                padding: 8px 15px;
-                font-size: 12px;
-            }
-
-        .top-bar a 
-            {
-                float: right;
-                color: white;
-                text-decoration: none;
-                background-color: #555555;
-                padding: 3px 8px;
-                border-radius: 5px;
-            }
-
-        /* Main background section */
-        .login-section 
-            {
-                position: relative;
-                min-height: 450px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                overflow: hidden;
-            }
-
-        /* Blurred library background */
-        .login-section::before 
-            {
-                content: "";
-                position: absolute;
-                top: -10px;
-                left: -10px;
-                right: -10px;
-                bottom: -10px;
-
-                background-image: url('${pageContext.request.contextPath}/img/bg-img-1.jpg');
-                background-size: cover;
-                background-position: center;
-
-                filter: blur(4px);
-                z-index: 0;
-            }
-
-        /* Dark layer over background */
-        .login-section::after 
-            {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-
-                background-color: rgba(0, 0, 0, 0.2);
-                z-index: 1;
-            }
-
-        /* White login box */
-        .login-box 
-            {
-                position: relative;
-                z-index: 2;
-
-                width: 300px;
-                padding: 25px;
-
-                background-color: white;
-                border-radius: 5px;
-
-                box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-            }
-
-        /* Login heading */
-        .login-box h2 
-            {
-                text-align: center;
-                font-size: 24px;
-                font-weight: bold;
-                margin-bottom: 20px;
-                color: #333333;
-            }
-
-        /* Input labels */
-        .login-box label 
-            {
-                font-size: 12px;
-                font-weight: bold;
-                margin-bottom: 5px;
-            }
-
-        /* Input fields */
-        .login-box input 
-            {
-                width: 100%;
-                padding: 8px;
-                margin-bottom: 12px;
-
-                border: 1px solid #cccccc;
-                border-radius: 4px;
-
-                font-size: 12px;
-                box-sizing: border-box;
-            }
-
-        /* Red login button */
-        .login-button 
-            {
-                width: 100%;
-                padding: 9px;
-
-                background-color: #ff3344;
-                color: white;
-
-                border: none;
-                border-radius: 3px;
-
-                font-size: 12px;
-                cursor: pointer;
-            }
-
-        /* Button hover effect */
-        .login-button:hover 
-            {
-                background-color: #dd2233;
-            }
-
-        /* Forgot password link */
-        .forgot-password 
-            {
-                display: block;
-                text-align: center;
-                margin-top: 12px;
-
-                font-size: 11px;
-                color: #333333;
-                text-decoration: none;
-            }
-
-        .forgot-password:hover 
-            {
-                color: #ff3344;
-                text-decoration: underline;
-            }
-
-        /* Bottom footer */
-        .footer 
-            {
-                background-color: #1b2b3a;
-                color: white;
-
-                text-align: center;
-                padding: 15px;
-
-                font-size: 10px;
-            }
-
-        /* Adjust for smaller screens */
-        @media screen and (max-width: 480px) 
-            {
-
-                .login-box 
-                    {
-                        width: 85%;
-                        padding: 20px;
-                    }
-
-                .login-section 
-                    {
-                        min-height: 450px;
-                    }
-
-            }
-
-    </style>
-
+    <title>Biblio-Space - Login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/bootstrap.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/font-awesome-4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/tooplate-style.css">
 </head>
-
 <body>
 
-    <!-- Top Bar -->
-    <div class="top-bar">
-        Biblio-Space
-
-        <a href="login.jsp">Login</a>
-    </div>
-
-
     <!-- Login Section -->
-    <div class="login-section">
+    <div class="tm-section tm-bg-img" style="min-height: 100vh; background-image: url('${pageContext.request.contextPath}/img/bg-img-1.jpg'); background-size: cover; background-position: center; display: flex; align-items: center; justify-content: center;">
+        
+        <div class="login-card" style="background: white; padding: 40px; border-radius: 10px; width: 100%; max-width: 450px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+            
+            <div class="text-center mb-4">
+                <i class="fa fa-user-circle-o" style="font-size: 4rem; color: #ff5a5f; margin-bottom: 15px;"></i>
+                <h2 class="font-weight-bold" style="color: #333;">Welcome Back</h2>
+                <p class="text-muted">Enter your Student ID and password to access your portal.</p>
+            </div>
 
-        <div class="login-box">
+            <form action="LoginServlet" method="POST">
+                <div class="form-group mb-3">
+                    <label for="studentId" style="font-weight: 600; color: #555;">Student ID</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" style="background: #ffebeb; border: none; color: #ff5a5f;"><i class="fa fa-id-badge"></i></span>
+                        </div>
+                        <input type="text" class="form-control" id="studentId" name="studentId" placeholder="e.g. 2024123456" required style="border: 1px solid #ddd; padding: 10px 15px;">
+                    </div>
+                </div>
 
-            <h2>Login</h2>
+                <div class="form-group mb-4">
+                    <label for="password" style="font-weight: 600; color: #555;">Password</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" style="background: #ffebeb; border: none; color: #ff5a5f;"><i class="fa fa-lock"></i></span>
+                        </div>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="••••••••" required style="border: 1px solid #ddd; padding: 10px 15px;">
+                    </div>
+                </div>
 
-            <!-- Login Form -->
-            <form action="${pageContext.request.contextPath}/LoginServlet"
-                  method="post">
-
-                <!-- Student ID -->
-                <label for="studentID">Student ID</label>
-
-                <input type="text"
-                       id="studentID"
-                       name="studentID"
-                       placeholder="Student ID"
-                       required>
-
-
-                <!-- Password -->
-                <label for="password">Password</label>
-
-                <input type="password"
-                       id="password"
-                       name="password"
-                       placeholder="Password"
-                       required>
-
-
-                <!-- Login Button -->
-                <button type="submit" class="login-button">
+                <button type="submit" class="btn btn-primary btn-block" style="background-color: #ff5a5f; border-color: #ff5a5f; padding: 12px; border-radius: 5px; font-weight: bold; font-size: 1.1rem; text-transform: uppercase;">
                     Log In
                 </button>
-
             </form>
 
-            <!-- Forgot Password -->
-            <a href="forgotPassword.jsp" class="forgot-password">
-                Forgot your password?
-            </a>
-
+            <div class="text-center mt-4">
+                <p class="text-muted" style="margin-bottom: 5px;">New student?</p>
+                <a href="${pageContext.request.contextPath}/register.jsp" style="color: #ff5a5f; font-weight: bold; text-decoration: none;">Register here</a>
+            </div>
+            
         </div>
-
     </div>
-
-
-    <!-- Footer -->
-    <div class="footer">
-        Copyright &copy; 2026 Biblio-Space.
-        All rights reserved.
-    </div>
-
-</body>
-
-</html>
 
 <jsp:include page="includes/footer.jsp" />
