@@ -79,8 +79,8 @@ https://www.tooplate.com/view/2095-level
                                            <%= currentURL.endsWith("dashboard.jsp") ? "style='color: #ff5a5f !important; font-weight: bold;'" : "" %>>Dashboard</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="${pageContext.request.contextPath}/mybooking.jsp"
-                                           <%= currentURL.endsWith("mybooking.jsp") ? "style='color: #ff5a5f !important; font-weight: bold;'" : "" %>>My Bookings</a>
+                                        <a class="nav-link" href="${pageContext.request.contextPath}/mybookings.jsp"
+                                           <%= currentURL.endsWith("mybookings.jsp") ? "style='color: #ff5a5f !important; font-weight: bold;'" : "" %>>My Bookings</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="${pageContext.request.contextPath}/roomstatus.jsp"
