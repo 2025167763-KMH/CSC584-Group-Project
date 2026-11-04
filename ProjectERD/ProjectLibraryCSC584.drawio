@@ -1,0 +1,282 @@
+<mxfile host="app.diagrams.net" agent="Nexus">
+  <diagram id="library-room-erd-simple" name="Library Room Booking ERD">
+    <mxGraphModel dx="777" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="students_head" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;fontStyle=1;" value="Students" vertex="1">
+          <mxGeometry height="25" width="204" x="35" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="students_r0_c0" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="int" vertex="1">
+          <mxGeometry height="23" width="42" x="35" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="students_r0_c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="student_ID" vertex="1">
+          <mxGeometry height="23" width="122" x="77" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="students_r0_c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="PK" vertex="1">
+          <mxGeometry height="23" width="40" x="199" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="students_r1_c0" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="string" vertex="1">
+          <mxGeometry height="23" width="42" x="35" y="123" as="geometry" />
+        </mxCell>
+        <mxCell id="students_r1_c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="student_Fname" vertex="1">
+          <mxGeometry height="23" width="122" x="77" y="123" as="geometry" />
+        </mxCell>
+        <mxCell id="students_r1_c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="" vertex="1">
+          <mxGeometry height="23" width="40" x="199" y="123" as="geometry" />
+        </mxCell>
+        <mxCell id="students_r2_c0" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="string" vertex="1">
+          <mxGeometry height="23" width="42" x="35" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="students_r2_c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="student_Lname" vertex="1">
+          <mxGeometry height="23" width="122" x="77" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="students_r2_c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="" vertex="1">
+          <mxGeometry height="23" width="40" x="199" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="rooms_head" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;fontStyle=1;" value="Rooms" vertex="1">
+          <mxGeometry height="25" width="204" x="365" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="rooms_r0_c0" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="int" vertex="1">
+          <mxGeometry height="23" width="42" x="365" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="rooms_r0_c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="room_ID" vertex="1">
+          <mxGeometry height="23" width="122" x="407" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="rooms_r0_c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="PK" vertex="1">
+          <mxGeometry height="23" width="40" x="529" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="rooms_r1_c0" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="string" vertex="1">
+          <mxGeometry height="23" width="42" x="365" y="123" as="geometry" />
+        </mxCell>
+        <mxCell id="rooms_r1_c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="Room_name" vertex="1">
+          <mxGeometry height="23" width="122" x="407" y="123" as="geometry" />
+        </mxCell>
+        <mxCell id="rooms_r1_c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="" vertex="1">
+          <mxGeometry height="23" width="40" x="529" y="123" as="geometry" />
+        </mxCell>
+        <mxCell id="rooms_r2_c0" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="string" vertex="1">
+          <mxGeometry height="23" width="42" x="365" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="rooms_r2_c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="Room_type" vertex="1">
+          <mxGeometry height="23" width="122" x="407" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="rooms_r2_c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="" vertex="1">
+          <mxGeometry height="23" width="40" x="529" y="146" as="geometry" />
+        </mxCell>
+        <mxCell id="librarians_head" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;fontStyle=1;" value="Librarians" vertex="1">
+          <mxGeometry height="25" width="389" x="700" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="librarians_r0_c0" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="int" vertex="1">
+          <mxGeometry height="23" width="46" x="700" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="librarians_r0_c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="librarian_ID" vertex="1">
+          <mxGeometry height="23" width="135" x="746" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="librarians_r0_c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="PK" vertex="1">
+          <mxGeometry height="23" width="38" x="881" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="librarians_r0_c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="" vertex="1">
+          <mxGeometry height="23" width="170" x="919" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="librarians_r1_c0" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="string" vertex="1">
+          <mxGeometry height="23" width="46" x="700" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="librarians_r1_c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="librarian_Fname" vertex="1">
+          <mxGeometry height="23" width="135" x="746" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="librarians_r1_c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="" vertex="1">
+          <mxGeometry height="23" width="38" x="881" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="librarians_r1_c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="" vertex="1">
+          <mxGeometry height="23" width="170" x="919" y="113" as="geometry" />
+        </mxCell>
+        <mxCell id="librarians_r2_c0" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="string" vertex="1">
+          <mxGeometry height="23" width="46" x="700" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="librarians_r2_c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="librarian_Lname" vertex="1">
+          <mxGeometry height="23" width="135" x="746" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="librarians_r2_c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="" vertex="1">
+          <mxGeometry height="23" width="38" x="881" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="librarians_r2_c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="" vertex="1">
+          <mxGeometry height="23" width="170" x="919" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="librarians_r3_c0" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="string" vertex="1">
+          <mxGeometry height="23" width="46" x="700" y="159" as="geometry" />
+        </mxCell>
+        <mxCell id="librarians_r3_c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="Roles" vertex="1">
+          <mxGeometry height="23" width="135" x="746" y="159" as="geometry" />
+        </mxCell>
+        <mxCell id="librarians_r3_c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="" vertex="1">
+          <mxGeometry height="23" width="38" x="881" y="159" as="geometry" />
+        </mxCell>
+        <mxCell id="librarians_r3_c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="admin, superadmin, normalstaff" vertex="1">
+          <mxGeometry height="23" width="170" x="919" y="159" as="geometry" />
+        </mxCell>
+        <mxCell id="bookings_head" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;fontStyle=1;" value="Bookings" vertex="1">
+          <mxGeometry height="25" width="346" x="190" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="bookings_r0_c0" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="int" vertex="1">
+          <mxGeometry height="23" width="42" x="190" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="bookings_r0_c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="booking_ID" vertex="1">
+          <mxGeometry height="23" width="116" x="232" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="bookings_r0_c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="PK" vertex="1">
+          <mxGeometry height="23" width="38" x="348" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="bookings_r0_c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="" vertex="1">
+          <mxGeometry height="23" width="150" x="386" y="355" as="geometry" />
+        </mxCell>
+        <mxCell id="bookings_r1_c0" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="int" vertex="1">
+          <mxGeometry height="23" width="42" x="190" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="bookings_r1_c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="student_ID" vertex="1">
+          <mxGeometry height="23" width="116" x="232" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="bookings_r1_c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="FK" vertex="1">
+          <mxGeometry height="23" width="38" x="348" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="bookings_r1_c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="Proposed link" vertex="1">
+          <mxGeometry height="23" width="150" x="386" y="378" as="geometry" />
+        </mxCell>
+        <mxCell id="bookings_r2_c0" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="int" vertex="1">
+          <mxGeometry height="23" width="42" x="190" y="401" as="geometry" />
+        </mxCell>
+        <mxCell id="bookings_r2_c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="room_ID" vertex="1">
+          <mxGeometry height="23" width="116" x="232" y="401" as="geometry" />
+        </mxCell>
+        <mxCell id="bookings_r2_c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="FK" vertex="1">
+          <mxGeometry height="23" width="38" x="348" y="401" as="geometry" />
+        </mxCell>
+        <mxCell id="bookings_r2_c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="Moved from students" vertex="1">
+          <mxGeometry height="23" width="150" x="386" y="401" as="geometry" />
+        </mxCell>
+        <mxCell id="bookings_r3_c0" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="int" vertex="1">
+          <mxGeometry height="23" width="42" x="190" y="424" as="geometry" />
+        </mxCell>
+        <mxCell id="bookings_r3_c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="librarian_ID" vertex="1">
+          <mxGeometry height="23" width="116" x="232" y="424" as="geometry" />
+        </mxCell>
+        <mxCell id="bookings_r3_c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="FK" vertex="1">
+          <mxGeometry height="23" width="38" x="348" y="424" as="geometry" />
+        </mxCell>
+        <mxCell id="bookings_r3_c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="Proposed optional link" vertex="1">
+          <mxGeometry height="23" width="150" x="386" y="424" as="geometry" />
+        </mxCell>
+        <mxCell id="bookings_r4_c0" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="time" vertex="1">
+          <mxGeometry height="23" width="42" x="190" y="447" as="geometry" />
+        </mxCell>
+        <mxCell id="bookings_r4_c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="book_time" vertex="1">
+          <mxGeometry height="23" width="116" x="232" y="447" as="geometry" />
+        </mxCell>
+        <mxCell id="bookings_r4_c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="" vertex="1">
+          <mxGeometry height="23" width="38" x="348" y="447" as="geometry" />
+        </mxCell>
+        <mxCell id="bookings_r4_c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="Moved from students" vertex="1">
+          <mxGeometry height="23" width="150" x="386" y="447" as="geometry" />
+        </mxCell>
+        <mxCell id="bookings_r5_c0" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="date" vertex="1">
+          <mxGeometry height="23" width="42" x="190" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="bookings_r5_c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="book_date" vertex="1">
+          <mxGeometry height="23" width="116" x="232" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="bookings_r5_c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="" vertex="1">
+          <mxGeometry height="23" width="38" x="348" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="bookings_r5_c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="Moved from students" vertex="1">
+          <mxGeometry height="23" width="150" x="386" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="roomstatus_head" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;fontStyle=1;" value="Rooms_Status" vertex="1">
+          <mxGeometry height="25" width="384" x="700" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="roomstatus_r0_c0" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="int" vertex="1">
+          <mxGeometry height="23" width="46" x="700" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="roomstatus_r0_c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="roomID" vertex="1">
+          <mxGeometry height="23" width="130" x="746" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="roomstatus_r0_c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="PK,FK" vertex="1">
+          <mxGeometry height="23" width="48" x="876" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="roomstatus_r0_c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="" vertex="1">
+          <mxGeometry height="23" width="160" x="924" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="roomstatus_r1_c0" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="date" vertex="1">
+          <mxGeometry height="23" width="46" x="700" y="408" as="geometry" />
+        </mxCell>
+        <mxCell id="roomstatus_r1_c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="bookingdate" vertex="1">
+          <mxGeometry height="23" width="130" x="746" y="408" as="geometry" />
+        </mxCell>
+        <mxCell id="roomstatus_r1_c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="PK" vertex="1">
+          <mxGeometry height="23" width="48" x="876" y="408" as="geometry" />
+        </mxCell>
+        <mxCell id="roomstatus_r1_c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="Proposed daily status key" vertex="1">
+          <mxGeometry height="23" width="160" x="924" y="408" as="geometry" />
+        </mxCell>
+        <mxCell id="roomstatus_r2_c0" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="string" vertex="1">
+          <mxGeometry height="23" width="46" x="700" y="431" as="geometry" />
+        </mxCell>
+        <mxCell id="roomstatus_r2_c1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="Roomstatus" vertex="1">
+          <mxGeometry height="23" width="130" x="746" y="431" as="geometry" />
+        </mxCell>
+        <mxCell id="roomstatus_r2_c2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=center;spacingLeft=4;" value="" vertex="1">
+          <mxGeometry height="23" width="48" x="876" y="431" as="geometry" />
+        </mxCell>
+        <mxCell id="roomstatus_r2_c3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=middle;fontFamily=Arial;fontSize=10;strokeColor=#4E91D9;strokeWidth=1;fillColor=#FFFFFF;align=left;spacingLeft=4;" value="" vertex="1">
+          <mxGeometry height="23" width="160" x="924" y="431" as="geometry" />
+        </mxCell>
+        <mxCell id="rel_student_booking" edge="1" parent="1" source="students_head" style="edgeStyle=none;html=1;rounded=0;strokeColor=#7F8588;strokeWidth=1;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;fontSize=11;fontFamily=Arial;labelBackgroundColor=#FFFFFF;entryX=0.258;entryY=-0.032;entryDx=0;entryDy=0;entryPerimeter=0;" target="bookings_head" value="makes">
+          <mxGeometry relative="1" x="0.631" as="geometry">
+            <Array as="points">
+              <mxPoint x="137" y="40" />
+              <mxPoint x="280" y="40" />
+              <mxPoint x="280" y="280" />
+            </Array>
+            <mxPoint x="280" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel_room_booking" edge="1" parent="1" source="rooms_head" style="edgeStyle=none;html=1;rounded=0;strokeColor=#7F8588;strokeWidth=1;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;fontSize=11;fontFamily=Arial;labelBackgroundColor=#FFFFFF;entryX=0.401;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.369;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" target="bookings_head" value="receives">
+          <mxGeometry relative="1" x="0.085" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="40" />
+              <mxPoint x="330" y="40" />
+              <mxPoint x="330" y="200" />
+            </Array>
+            <mxPoint x="440" y="70" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel_librarian_booking" edge="1" parent="1" source="librarians_head" style="edgeStyle=none;html=1;rounded=0;strokeColor=#7F8588;strokeWidth=1;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;fontSize=11;fontFamily=Arial;labelBackgroundColor=#FFFFFF;exitX=0.464;exitY=0.008;exitDx=0;exitDy=0;exitPerimeter=0;" target="bookings_head" value="handles">
+          <mxGeometry relative="1" x="0.5604" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="880" y="40" />
+              <mxPoint x="680" y="40" />
+              <mxPoint x="680" y="280" />
+              <mxPoint x="520" y="280" />
+              <mxPoint x="480" y="280" />
+              <mxPoint x="440" y="280" />
+              <mxPoint x="440" y="330" />
+            </Array>
+            <mxPoint x="880" y="60" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel_room_status" edge="1" parent="1" source="rooms_head" style="edgeStyle=none;html=1;rounded=0;strokeColor=#7F8588;strokeWidth=1;startArrow=ERone;startFill=0;endArrow=ERmany;endFill=0;fontSize=11;fontFamily=Arial;labelBackgroundColor=#FFFFFF;exitX=0.565;exitY=-0.04;exitDx=0;exitDy=0;exitPerimeter=0;" target="roomstatus_head" value="has">
+          <mxGeometry relative="1" x="0.025" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="40" />
+              <mxPoint x="620" y="40" />
+              <mxPoint x="620" y="220" />
+              <mxPoint x="892" y="220" />
+              <mxPoint x="892" y="280" />
+            </Array>
+            <mxPoint x="480" y="70" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
